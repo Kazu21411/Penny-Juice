@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #fff1ed
+    ;
+  }
+  .nav__links {
+      list-style: none;
+      display: flex;
+    }
+  
+    .nav__links a,
+    .cta,
+    .overlay__content a {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      color: #9DC0BC;
+      text-decoration: none;
+    }
+  
+    .nav__links li {
+      padding: 0px 20px;
+    }
+    
+    .nav__links li a {
+      transition: all 0.3s ease 0s;
+    }
+    
+    .nav__links li a:hover {
+      color: #edfff1;
+    }
+    
+    .cta {
+      margin-left: 20px;
+      padding: 9px 25px;
+      background-color: #edfbff
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+    }
+    
+    .cta:hover {
+      background-color: #edfbff;
+    }
+    
+  
+    
+    .menu {
+      display: none;
+    }
+    
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      background-color: #24252a;
+      overflow-x: hidden;
+      transition: all 0.5s ease 0s;
+    }
+    
+    .overlay--active {
+      width: 100%;
+    }
+    
+    .overlay__content {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .overlay a {
+      padding: 15px;
+      font-size: 36px;
+      display: block;
+      transition: all 0.3s ease 0s;
+    }
+    
+    .overlay a:hover,
+    .overlay a:focus {
+      color: #fff1ed;
+    }
+    .overlay .close {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+      color: #edf0f1;
+      cursor: pointer;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .overlay a {
+        font-size: 20px;
+      }
+      .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+    
+    @media only screen and (max-width: 800px) {
+      .nav__links,
+      .cta {
+        display: none;
+      }
+      .menu {
+        display: initial;
+      }
+    }
+
+.centered {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+ border-style: solid;
+}
+
+/* navigation bar*/
+
+.header {
+  background-image: url(https://i.ibb.co/KFpPpyL/New-Project-11-1.png);
+width: 100%;
+height: 405px;
+
+background-size: cover;
+background-repeat: no-repeat;
+position: static;
+}
+
+/* below header*/
+
+.image1 {
+  position: absolute;
+  top: 300px;
+  left: -340px;
+  width: 900px;
+   border: 1px solid #000000;
+}
+.image2 {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  width: 650px;
+   border: 1px solid #000000;
+}
+
+.text {
+  word-break: break-all;}
+
+.juice {
+  position: absolute;
+  top: 750px;
+  left: -360px;
+  width: 2000px;
+}
+
+.box {
+  position: absolute;
+  top: 1100px;
+  left: -100px;
+  width: 650; 
+ 
+}
+
+.box {
+  width: 1600px;
+  padding: 50px;
+  border: 1px solid black;
+  margin: 0;
+  background-color:#FF8196;
+  
+}
+
+{
+  margin: 0;
+  padding: 0;
+}
+body {
+ 
+}
+.portfolio {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1000px;
+  margin-right: -500px
+    
+}
+
+.portfolio h2 {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 50px auto 30px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: black;
+}
+.card {
+  width: 25%;
+  overflow: hidden;
+  position: relative;
+}
+.card .content {
+  z-index: 2;
+  width: 100%;
+  position: absolute;
+  bottom: -200px;
+  transition: all 0.7s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100px;
+  background: #111;
+}
+.card .image {
+  z-index: 1;
+  height: 100%;
+}
+.card img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease;
+  transform: scale(1.2);
+}
+
+.card:hover .content {
+  bottom: 0px;
+  color: #fff;
+}
+
+.card:hover .image img {
+  transform: scale(1);
+}
+
+.card .content span:first-child {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+.card .content span:last-child {
+  font-size: 14px;
+  color: #EDFBFF;
+  text-align: center;
+  font-weight: 700;
+}
+
+
+@media screen and (max-width: 768px) {
+  .card {
+  width: 50%;
+  }
+  .card .content {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+  width: 100%;
+  }
+}
+
+
+
+
